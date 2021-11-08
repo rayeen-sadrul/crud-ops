@@ -1,14 +1,28 @@
-// import logo from './logo.svg';
+import React from "react";
+// import BasicTable from "./components_table/BasicTable";
+// import SortingTable from "./components_table/SortingTable";
+// import FilteringTable from "./components_table/FilteringTable";
+// import PaginationTable from "./components_table/PaginationTable";
+// import lodash from "./lodash";
+
+// const App = () => {
+//   return (
+//     <div>
+//       <PaginationTable />
+//     </div>
+//   );
+// };
+
+// export default App;
+
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import CreateEmployee from "./components/CreateEmployee";
 import ListEmployee from "./components/ListEmployee";
 import ViewEmployee from "./components/ViewEmployee";
-// import UpdateEmployee from "./components/UpdateEmployee";
-import "./App.css";
 import Header from "./components/Header";
-// import Footer from "./components/Footer";
+import "./App.css";
 
-function App() {
+const App = () => {
   return (
     <div>
       <Router>
@@ -30,6 +44,6 @@ function App() {
       </Router>
     </div>
   );
-}
+};
 
 export default App;
